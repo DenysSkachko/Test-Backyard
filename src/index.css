@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #f0f0f1;
+  --color-main: #303030;
+  --color-alt: #2626268c;
+  --color-alt2: #aeb0b1;
+  --color-form: #f4f6f7;
+  --color-button-dark: #2d2d2d;
+  --color-button-light: #e6e8ec;
+  --color-text-light: #f7f7f7;
+  --color-text-dark: #2e2e2e;
+  --color-dark-works: #292829;
+
+  --breakpoint-xs: 431px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 1278px;
+  --breakpoint-xlg: 1440px;
+}
+
+@font-face {
+  font-family: 'Konnect';
+  src: url('/src/assets/Konnect-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/src/assets/Gilroy-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy M';
+  src: url('/src/assets/Gilroy-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Archivo', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+.font-konnect {
+  font-family: 'Konnect', sans-serif;
+}
+
+.font-gilroy {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.font-gilroy-m {
+  font-family: 'Gilroy M', sans-serif;
+}
+
+.noise-dark {
+  background-image: url('/noise.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.noise-light {
+  background-image: url('/noise-light.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.noise-light-big {
+  background-image: url('/noise-light-big.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.how-it-works-bg {
+  background-image: url('/how-it-works-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: screen;
+}
