@@ -17,7 +17,7 @@ const Hero = () => {
         className="flex flex-col gap-9.5 sm:gap-8.5 lg:gap-20"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
         variants={textVariants}
       >
         <div>
